@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>Dinheiro que dá em árvore</title>
+	<meta name="author" content="Hebert Valois" />
+	<meta name="description" content="" />
+	<meta name="keywords"  content="fullpage,jquery" />
+	<meta name="Resource-type" content="Document" />
+
+	<link href="https://fonts.googleapis.com/css?family=Kreon:300,400,700" rel="stylesheet">
+
+	<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/jquery.fullpage/2.8.8/jquery.fullpage.min.css" />
+
+	<link rel="stylesheet" type="text/css" href="styles.css" />
+
+	<!--[if IE]>
+		<script type="text/javascript">
+			 var console = { log: function() {} };
+		</script>
+	<![endif]-->
+
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+	<script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>
+
+	<script type="text/javascript" src="https://cdn.jsdelivr.net/jquery.fullpage/2.8.8/jquery.fullpage.min.js"></script>
+	<script type="text/javascript" src="scripts.js"></script>
+
+	<script type="text/javascript">
+      // 2. This code loads the IFrame Player API code asynchronously.
+      var tag = document.createElement('script');
+
+      tag.src = "https://www.youtube.com/iframe_api";
+      var firstScriptTag = document.getElementsByTagName('script')[0];
+      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+	</script>
+
+
+<style type="text/css">
+	#preload {
+		display: block;
+	}
+
+	#preload p {
+	    height: 20px;
+	    width: 100px;
+	    margin: -100px -50px;
+	    background: url(img/preloader.gif) no-repeat center center;
+	    background-size: contain;
+	    padding-top: 180px;
+	    position: absolute;
+	    left: 50%;
+	    right: 50%;
+	    top: 50%;
+	    bottom: 50%;
+	}
+
+	#fullpage {
+		display: none;
+	}
+</style>
+
+<script type="text/javascript">
+	function loadPage() {
+		document.getElementById("fullpage").style.display = "block";
+		document.getElementById("preload").style.display = "none";
+			$('#bgVideo1').removeClass('faded').addClass('surge2');
+			$('#section0 .midwrap .coll h1').removeClass('faded').addClass('surge4');
+			$('#section0 .midwrap .coll h2').removeClass('faded').addClass('surge5');
+			$('#section0 .midwrap .colr').removeClass('faded').addClass('surge5');
+
+	}
+</script>
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-92183949-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+</head>
+
+<body onload="loadPage()">
+
+<div class="section " id="preload">
+	<p> Carregando...</p>
+</div>
+
+<div id="fullpage">
+
+	<div class="section " id="section0">
+		<video data-autoplay loop muted id="bgVideo1" class="bgvideo faded">
+			<source data-src="img/bg01.mp4" type="video/mp4">
+			<source data-src="img/bg01.webm" type="video/webm">
+		</video>
+		<div class="midwrap">
+			<div class="coll">
+				<h1 class="faded">Dinheiro</h1>
+				<h2 class="faded">que dá em árvore</h2>
+			</div>
+			<div class="colr faded">
+				<div class="introbox">
+					<p>Conheça agricultores familiares, técnicos e governantes que ajudam o país a produzir e ao mesmo tempo recuperar as florestas da Amazônia</p>
+					<div class="arrow-down pulse"></div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="section moveDown" id="section1">
+		<div class="wrap ltr">
+			<div class="vidframe">
+				<div id="vid01" class="playvid">
+					<iframe id="v1" width="1180" height="664" src="" frameborder="0"></iframe>
+					<div id="pv1" class="coll faded">
+						<p id="p1" class="play" onclick="play01()">Play</p>
+					</div>
+					<div id="st1" class="colr box faded">
+						<h2>A Agrofloresta</h2>
+						<p>O Brasil estabeleceu uma meta: até 2030 recuperar 12 milhões de hectares de área desmatadas. É uma grande oportunidade de gerar desenvolvimento sustentável. Nesta reportagem, visitamos o norte do Mato Grosso e encontramos pessoas que estão revivendo as matas por meio da agricultura familiar.</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="section moveDown" id="section2">
+		<div class="wrap rtl">
+			<div class="vidframe">
+				<div id="vid02" class="playvid">
+					<iframe id="v2" src="" frameborder="0"></iframe>
+					<div id="pv2" class="colr faded">
+						<p id="p2" class="play" onclick="play02()">Play</p>
+					</div>
+					<div id="st2" class="coll box faded">
+						<h2>As Florestas e a Água</h2>
+						<p>Imagine transformar metade do estado de São Paulo em uma grande mata, com árvores frutíferas, animais nativos e rios cristalinos. Esta é a escala do desafio da restauração florestal. Mas nesta encruzilhada está também um caminho próspero com a proteção dos recursos hídricos essenciais para produção.</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="section moveDown" id="section3">
+			<div id="slide1" class="slide">
+				<h3>Tudo começa como semente. A restauração florestal depende da formação de bancos de sementes de árvores nativas para que possa ganhar escala.</h3>
+			</div>
+			<div id="slide2" class="slide">
+				<h3>O produtor tem um papel fundamental no processo de restauração das florestas, nascentes e consequentemente da biodiversidade.</h3>
+			</div>
+			<div id="slide3" class="slide">
+				<h3>Para criar raízes profundas, a restauração florestal depende de interesse político e aporte financeiro para ganhar escala. O acompanhamento técnico deve ser constante, uma vez que ainda estamos aprendendo a replantar as florestas.</h3>
+			</div>
+			<div id="slide4" class="slide">
+				<h3>Com o objetivo de recuperar 12 milhões de hectares até 2030, o Brasil precisa intensificar os projetos de restauração florestal. O agricultor familiar é peça fundamental para alcançar este objetivo.</h3>
+			</div>
+	</div>
+
+	<div class="section moveDown" id="section4">
+		<div class="wrap ltr">
+			<div class="vidframe">
+				<div id="vid03" class="playvid">
+					<iframe id="v3" src="" frameborder="0"></iframe>
+					<div id="pv3" class="colr faded">
+						<p id="p3" class="play" onclick="play03()">Play</p>
+					</div>
+					<div id="st3" class="coll box faded">
+						<h3>As condições para a restauração por agricultores familiares</h3>
+						<p>A recuperação de florestas por agricultores familiares precisa de crédito, assistência técnica e articulação de cadeias produtivas. A Fundación Avina coordenou a coleta de informações enviadas colaborativamente por ONGs, órgãos públicos e sites de acesso público, criando uma versão preliminar do mapa de arranjos favoráveis à restauração por agricultores familiares.</p> 
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="section moveDown" id="section5">
+		<div class="wrap jr faded">
+			<div id="map">
+				<iframe class="mapframe" id="m1" src="" frameborder="0" width="100%" height="600"></iframe>
+				<div id="lm1" class="colr faded">
+					<a id="loadMap" onclick="mapHere()">Carregar mapa</a>
+					<h4>Leia o estudo completo</h4>
+					<p><a class="diagnosis" href="https://infoamazonia.n.openearth.net/diagnostico-avina-vii/" target="_blank">Diagnóstico sobre restauração de paisagens florestais com fins econômicos e de segurança alimentar para agricultores familiares da Amazônia</a></p>
+				</div>
+				<div id="mapText" class="coll box faded">
+					<h2>Oportunidades para Recuperar as Florestas</h2>
+					<p>Este mapeamento colaborativo feito a partir dos dados coletados por Fundación Avina revela quais municípios contam com aspectos de um arranjo local favorável à restauração por agricultores familiares. Uma das conclusões indica que as ONGs são mais atuantes em locais com pouco acesso a créditos do governo federal.</p>
+					<a class="allData" href="https://infoamazonia.org/pt/datasets/" target="_blank">Baixe aqui todos os dados</a>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="section moveDown" id="section6">
+		<video data-autoplay loop muted id="bgVideo2" class="bgvideo">
+			<source data-src="img/bg02prod.mp4" type="video/mp4">
+			<source data-src="img/bg02prod.webm" type="video/webm">
+		</video>
+		<div class="midwrap">
+			<div class="coll surge2">
+				<h2>Da agrofloresta para a mesa do consumidor</h2>
+			</div>
+			<div class="colr surge4">
+				<p class="quote">O elo mais importante no esforço da restauração é o agricultor familiar. Coletores de semente, produtores de frutas e legumes, fornecedores de leite, carne e ovos. Eles podem garantir a sustentabilidade através da agrofloresta</p>
+			</div>
+		</div>
+	</div>
+
+	<div class="section moveDown" id="section7">
+		<div class="wrap ltr">
+			<div class="vidframe">
+				<div id="vid04" class="playvid">
+					<iframe id="v4" src="" frameborder="0"></iframe>
+					<div id="st4" class="colr box faded">
+						<h2>Os Agricultores Familiares</h2>
+						<p>O plantio de espécies de alto valor comercial mescladas com árvores pioneiras para o reflorestamento tem se mostrado uma estratégia certeira no norte do Mato Grosso. Os produtores estão satisfeitos e outros benefícios ambientais já podem ser sentidos como o retorno da fauna e de nascentes d'água.</p>
+					</div>
+					<div id="pv4" class="coll faded">
+						<p id="p4" class="play" onclick="play04()">Play</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	<div class="section moveDown" id="section8">
+		<div class="wrap rtl">
+			<div class="vidframe">
+				<div id="vid05" class="playvid">
+					<iframe id="v5" src="" frameborder="0"></iframe>
+					<div id="st5" class="coll box faded">
+						<h2>Os Feirantes e Consumidores</h2>
+						<p>Produtos locais e sem agrotóxico. Para os moradores de Alta Floresta, toda quarta é o dia de prestigiar a produção da agricultura familiar. Os feirantes e consumidores expressam a satisfação de obter os alimentos através da produção de sistemas agroflorestais.</p>
+					</div>
+					<div id="pv5" class="colr faded">
+						<p id="p5" class="play" onclick="play05()">Play</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="section moveDown" id="section9">
+		<div class="wrap ltr">
+			<div class="vidframe">
+				<div id="vid06" class="playvid">
+					<iframe id="v6" src="" frameborder="0"></iframe>
+					<div id="st6" class="colr box faded">
+						<h2>A Ajuda dos Técnicos</h2>
+						<p>Biólogos, agrônomos, engenheiros florestais. Estes são alguns dos profissionais envolvidos no desafio de recuperar as matas da Amazônia. Além de ajudarem na formação dos produtores e pesquisarem as melhores tecnologias para o reflorestamento. Não basta plantar, tem que planejar a paisagem. A conectividade de fragmentos florestais permite que as matas sejam saudáveis no longo prazo.</p> 
+					</div>
+					<div id="pv6" class="coll faded">
+						<p id="p6" class="play" onclick="play06()">Play</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="section moveDown" id="section10">
+		<div class="wrap jr">
+			<div class="vidframe">
+				<div id="vid07" class="playvid">
+					<iframe id="v7" src="" frameborder="0"></iframe>
+					<div id="st7" class="coll box faded">
+						<h2>O Papel dos Governantes</h2>
+						<p>Em Alta Floresta, Mato Grosso, o projeto Olhos D'água da Amazônia já impulsionou a recuperação de 5000 hectares. É uma iniciativa da prefeitura com apoio do Fundo Amazônia que envolveu produtores em torno do desafio de tirar o município da lista negra do desmatamento. O plantio e regeneração das matas se tornou uma bandeira de Alta Floresta.</p>
+					</div>
+					<div id="pv7" class="colr faded">
+						<p id="p7" class="play center" onclick="play07()">Play</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="section moveDown" id="section11">
+		<video data-autoplay loop muted id="bgVideo3" class="bgvideo">
+			<source data-src="img/bg03.mp4" type="video/mp4">
+			<source data-src="img/bg03.webm" type="video/webm">
+		</video>
+		<div class="midwrap faded">
+			<div class="coll faded">
+				<h2>Restauração em Agricultura Familiar</h2>
+			</div>
+			<div class="colr faded">
+				<ul class="items">
+					<li id="l1" class="faded">Fomenta a implementação de agroflorestas</li>
+					<li id="l2" class="faded">Garante a soberania alimentar das famílias envolvidas</li>
+					<li id="l3" class="faded">Potencializa o banco de sementes disponível na Amazônia</li>
+					<li id="l4" class="faded">Incentiva a economia local e solidária</li>
+					<li id="l5" class="faded">Reduz o consumo e aplicação de agrotóxicos</li>
+					<li id="l6" class="faded">Recupera nascentes e cursos hídricos</li>
+					<li id="l7" class="faded">Ajuda na formação de corredores ecológicos</li>
+					<li id="l8" class="faded">Restaura a biodiversidade da floresta</li>
+					<li id="l9" class="faded">Gera novas oportunidades de trabalho</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+
+	<div class="section moveDown" id="section12">
+		<div class="wrap jl">
+			<div class="vidframe">
+				<div id="vid08" class="playvid">
+					<iframe id="v8" class="frameVideo" src="" frameborder="0"></iframe>
+					<div id="st8" class="colr box faded">
+						<h2>Uma Semente para o Futuro</h2>
+						<p>As experiências de sucesso com os sistemas agroflorestais mostram que os agricultores familiares da Amazônia podem ser protagonistas no reflorestamento de 12 milhões de hectares até 2030. “Para que esta contribuição seja efetiva é essencial transformar as experiências pioneiras e sustentáveis da agricultura familiar em norma, não exceção”.</p>
+					</div>
+					<div id="pv8" class="coll faded">
+						<p id="p8" class="play center" onclick="play08()">Play</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="section moveDown" id="section13">
+		<div class="wrap faded">
+			<!--<h2>Créditos</h2>-->
+			<div class="coll">
+				<h3>Realização</h3>
+				<h1 class="infoamazonia"><a href="https://infoamazonia.org/pt" target="_blank" alt="InfoAmazonia">InfoAmazonia</a></h1>
+				<h3>Apoio local</h3>
+				<!--<h2 class="copernossa">CooperNossa</h2>-->
+				<h4>Camila Rodriguez</h4>
+				<h4>Eduardo Darwin</h4>
+				<h4>Rodrigo Marcelino</h4>
+			</div>
+			<div class="colr">
+				<h3>Apoio</h3>
+				<h1 class="avina"><a href="http://www.avina.net/avina/pt/fundacion/" target="_blank" alt="Fundación Avina">Avina</a></h1>
+				<h3>Equipe</h3>
+				<h4>Marcio Isensee e Sá</h4>
+				<h5>fotos e vídeos</h5>
+				<h4>Hebert Valois</h4>
+				<h5>design</h5>
+				<h4>Gustavo Faleiros</h4>
+				<h5>mapa, edição e reportagem</h5>
+			</div>
+		</div>
+	</div>
+</div>
+
+<a id="siteIA" href="//infoamazonia.org" target="_blank">InfoAmazonia</a>
+
+<script>
+</script>
+</body>
+</html>
